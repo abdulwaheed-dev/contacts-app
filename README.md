@@ -1,3 +1,22 @@
+# Contacts App Using React
+
+### Introduction
+
+This ptoject is the contacts appliction build using ReactJS. I am building this project to practice for ReactJS. This Project will be consisting of much features. Moreover, this project will be helpful for others who are learning react and web development. 
+
+### Features (will be updated as added to application)
+
+**1. Contact Manager:** This component will manages all your contacts.
+
+**2. Add New Contact:** This component will be for adding new contact by asing name and contact information.
+
+**3. Contact List:** This component will be for showing the list of contacts along with thier names, which are added.
+
+### Development
+
+**1. ReactJS** : As I am building this application using react, so this will be component based. Each part will be having a different component and each component will be having different functionality.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
