@@ -4,8 +4,8 @@ function Header() {
   return (
     <div className='ui menu'>
         <div className='ui container center'>
-          <h2 class="ui center aligned icon header">
-            <i class="address book icon" style={{marginTop:'10px' , color:"darkGreen"}}></i>
+          <h2 className="ui center aligned icon header">
+            <i className="address book icon" style={{marginTop:'10px' , color:"darkGreen"}}></i>
             Contacts Manager
           </h2>
         </div>
