@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+//import { BrowserRouter as Router, Swirch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 //import { uuid } from "uuidv4";
 import { v4 as uuid } from "uuid";
 import AddContact from "./AddContact";
