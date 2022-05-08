@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="ui">
+    <div className="ui" style={{ marginBottom: "20px" }}>
       <div className="ui menu" style={{ marginTop: "50px" }}>
         <div className="ui container center">
           <h2 className="ui center aligned icon header">

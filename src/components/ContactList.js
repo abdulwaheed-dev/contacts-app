@@ -1,5 +1,6 @@
 import React from "react";
 import ContactCard from "./ContactCard";
+import { Link } from "react-router-dom";
 
 function ContactList(props) {
   //console.log(props);
@@ -8,18 +9,20 @@ function ContactList(props) {
     props.getContactId(id);
   };
 
-  let contacts = [
-    {
-      name: "waheed",
-      email: "abc@gmail.com",
-    },
-    {
-      name: "waheed1",
-      email: "abcd@gmail.com",
-    },
-  ];
+  // let contacts = [
+  //   {
+  //     id: 1,
+  //     name: "waheed",
+  //     email: "abc@gmail.com",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "waheed1",
+  //     email: "abcd@gmail.com",
+  //   },
+  // ];
 
-  const renderContactList = contacts.map((contact) => {
+  const renderContactList = props.contacts.map((contact) => {
     return (
       <ContactCard
         contact={contact}
@@ -30,9 +33,16 @@ function ContactList(props) {
   });
 
   return (
-    <div className="ui celled list">
-      <h2>Contacts List</h2>
-      {renderContactList}
+    <div className="main">
+      <h2>
+        Contacts List
+        <Link to="/addContact">
+          <button className="ui button blue" style={{ float: "right" }}>
+            Add New Contact
+          </button>
+        </Link>
+      </h2>
+      <div className="ui celled list">{renderContactList}</div>
     </div>
   );
 }

@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
-//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-//import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-//import { uuid } from "uuidv4";
 import { v4 as uuid } from "uuid";
 import AddContact from "./AddContact";
 import "./App.css";
 import ContactList from "./ContactList";
 import Header from "./Header";
-import NavBar from "./NavBar";
 import NotFound from "./NotFound";
 
 function App() {
@@ -42,11 +37,22 @@ function App() {
 
   return (
     <div className="ui container">
-      <NavBar />
+      <Header />
       <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="contactList" element={<ContactList />} />
-        <Route path="addContact" element={<AddContact />} />
+        <Route
+          path="/"
+          exact
+          element={
+            <ContactList
+              contacts={contacts}
+              getContactId={removeContactHandler}
+            />
+          }
+        />
+        <Route
+          path="addContact"
+          element={<AddContact addContactHandler={addContactHandler} />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* <AddContact addContactHandler={addContactHandler} />
