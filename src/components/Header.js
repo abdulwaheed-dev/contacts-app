@@ -15,7 +15,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="ui container" style={{ marginTop: "50px" }}>
+      {/* <div className="ui container" style={{ marginTop: "50px" }}>
         <div
           className="ui menu"
           style={{ width: "190px", marginRight: "55%", float: "right" }}
@@ -57,7 +57,7 @@ function Header() {
             Contact List
           </h2>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
