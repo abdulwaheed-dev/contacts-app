@@ -14,9 +14,11 @@ This ptoject is the contacts appliction build using ReactJS. I am building this 
 
 **4. Delete Contact:** This functionality will be able to delete the contact from storage.
 
+**5. Routing:** Routing is implemented in this project.
+
 ### Development
 
-**1. ReactJS** : As I am building this application using react, so this will be component based. Each part will be having a different component and each component will be having different functionality.
+**1. ReactJS** : As I am building this application using reactjs, so this will be component based. Each part will be having a different component and each component will be having different functionality.
 Along with reactjs i am using html, css and the Semantic UI too.
 
 
